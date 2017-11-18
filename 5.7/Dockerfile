@@ -5,5 +5,5 @@ MAINTAINER Frank Ore <frank.ore@live.com>
 #Restore database
 
 COPY init_db.sh /tmp/init_db.sh
-RUN ["chmod", "+x", "/tmp/init_db.sh"]
+ENTRYPOINT ["chmod +x /tmp/init_db.sh"]
 
