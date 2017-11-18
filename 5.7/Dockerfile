@@ -4,6 +4,5 @@ MAINTAINER Frank Ore <frank.ore@live.com>
 
 #Restore database
 
-COPY init_db.sh /init_db.sh
-RUN chmod +x /init_db.sh
-RUN /init_db.sh
+ADD init_db.sh /root/init_db.sh
+RUN /root/init_db.sh
